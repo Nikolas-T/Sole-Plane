@@ -17,7 +17,7 @@ const Footer = () => {
             &larr; Go Back
           </button>
         )}
-        <h4>&copy; {new Date().getFullYear()} - Tech Friends <img src={GitHub} alt="GitHub" /></h4>
+        <h4>&copy; {new Date().getFullYear()} - Soul Plane <img src={GitHub} alt="GitHub" /></h4>
       </div>
     </footer>
   );

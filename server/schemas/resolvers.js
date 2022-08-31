@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { Profile } = require('../models');
+const { Profile, Sneaker } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -18,6 +18,12 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+    sneakers: async () => {
+      return Sneaker.find();
+    },
+    sneaker: async (parent, {sneakerId}) => {
+      return Sneaker.findOne({_id: sneakerId});
+    }
   },
 
   Mutation: {

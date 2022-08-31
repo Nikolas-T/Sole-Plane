@@ -51,7 +51,7 @@ const resolvers = {
     },
 
     // Add a third argument to the resolver to access data in our `context`
-    addSneaker: async (parent, { profileId, skill }, context) => {
+    addSneaker: async (parent, { profileId, Sneaker }, context) => {
       // If context has a `user` property, that means the user executing this mutation has a valid JWT and is logged in
       if (context.user) {
         return Profile.findOneAndUpdate(

@@ -1,0 +1,12 @@
+h1 img {
+    height: 150px;
+    width: 150px;
+    margin:0 0 50px 20px;
+
+}
+
+.login {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}

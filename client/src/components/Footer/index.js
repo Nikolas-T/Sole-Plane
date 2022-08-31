@@ -1,5 +1,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import './footer.css'
+import GitHub from '/UCF/Sole-Plane/client/src/images/GitHub.webp'
 
 const Footer = () => {
   const location = useLocation();
@@ -15,7 +17,7 @@ const Footer = () => {
             &larr; Go Back
           </button>
         )}
-        <h4>&copy; {new Date().getFullYear()} - Tech Friends</h4>
+        <h4>&copy; {new Date().getFullYear()} - Soul Plane <img src={GitHub} alt="GitHub" /></h4>
       </div>
     </footer>
   );

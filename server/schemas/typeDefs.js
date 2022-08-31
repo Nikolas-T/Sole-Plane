@@ -6,7 +6,7 @@ const typeDefs = gql`
     name: String
     email: String
     password: String
-    skills: [String]!
+    Sneakers: [String]!
   }
 
   type Auth {
@@ -25,9 +25,9 @@ const typeDefs = gql`
     addProfile(name: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
 
-    addSkill(profileId: ID!, skill: String!): Profile
+    addSneaker(profileId: ID!, Sneaker: String!): Profile
     removeProfile: Profile
-    removeSkill(skill: String!): Profile
+    removeSneaker(Sneaker: String!): Profile
   }
 `;
 

@@ -1,11 +1,11 @@
 import React from 'react';
 import { useMutation } from '@apollo/client';
 
-import { REMOVE_Sneaker } from '../../utils/mutations';
+import { REMOVE_SNEAKER } from '../../utils/mutations';
 import { QUERY_ME } from '../../utils/queries';
 
 const SneakersList = ({ sneakers, isLoggedInUser = false }) => {
-  const [removeSneaker, { error }] = useMutation(REMOVE_Sneaker, {
+  const [removeSneaker, { error }] = useMutation(REMOVE_SNEAKER, {
     update(cache, { data: { removeSneaker } }) {
       try {
         cache.writeQuery({

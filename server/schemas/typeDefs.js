@@ -9,7 +9,7 @@ const typeDefs = gql`
     Sneakers: [Sneakers]
   }
 
-  sneakers{
+  type sneakers{
     _id: ID
     shoeName: String
     brand: String

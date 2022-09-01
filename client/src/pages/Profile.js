@@ -45,13 +45,12 @@ const Profile = () => {
   return (
     <div>
       <h2 className="card-header">
-        {profileId ? `${profile.name}'s` : 'Your'} friends have endorsed these
-        skills...
+        {profileId ? `${profile.name}'s` : 'Your'} favorite shoes....
       </h2>
 
-      {profile.skills?.length > 0 && (
+      {profile.sneakers?.length > 0 && (
         <SkillsList
-          skills={profile.skills}
+          sneakers={profile.sneakers}
           isLoggedInUser={!profileId && true}
         />
       )}

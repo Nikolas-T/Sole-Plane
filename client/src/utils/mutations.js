@@ -16,8 +16,15 @@ export const ADD_SNEAKER = gql`
   mutation addSneaker($profileId: ID!, $sneaker: String!) {
     addSneaker(profileId: $profileId, sneaker: $sneaker) {
       _id
-      name
-      sneaker
+      shoeName
+      brand
+      silhoutte
+      make
+      colorway
+      retailPrice
+      thumbnail
+      releaseDate
+      resellLinks
     }
   }
 `;
@@ -36,10 +43,17 @@ export const LOGIN_USER = gql`
 
 export const REMOVE_SNEAKER = gql`
   mutation removeSneaker($sneaker: String!) {
-    removeSkill(sneaker: $sneaker) {
+    removeSneaker(sneaker: $sneaker) {
       _id
-      name
-      sneaker
+      shoeName
+      brand
+      silhoutte
+      make
+      colorway
+      retailPrice
+      thumbnail
+      releaseDate
+      resellLinks
     }
   }
 `;

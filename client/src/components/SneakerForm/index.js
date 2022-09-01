@@ -37,7 +37,7 @@ const SneakerForm = ({ profileId }) => {
           <div className="col-12 col-lg-9">
             <input
               placeholder="Choose your shoes..."
-              value={skill}
+              value={sneaker}
               className="form-input w-100"
               onChange={(event) => setSneaker(event.target.value)}
             />

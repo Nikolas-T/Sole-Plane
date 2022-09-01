@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css'
-import logo from '/UCF/Sole-Plane/client/src/images/soul-plane-logo.png'
+import logo from '../../images/soul-plane-logo.png'
 
 import Auth from '../../utils/auth';
 
@@ -19,8 +19,18 @@ const Header = () => {
           </h1>
         </Link>
         <p className="m-0" style={{ fontSize: '1.75rem', fontWeight: '700' }}>
-          
         </p>
+        <form className='searchBar'>
+            <input
+                  className="form-input"
+                  placeholder="Adidas, YEEZY, Nike, Jordan..."
+                  name="name"
+                  type="text"
+                  />
+                <button className="btn" type="submit">
+                  Search
+                </button>
+          </form>
         <div className='login'>
           {Auth.loggedIn() ? (
             <>

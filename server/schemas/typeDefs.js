@@ -6,10 +6,10 @@ const typeDefs = gql`
     name: String
     email: String
     password: String
-    Sneakers: [Sneakers]
+    sneakers: [sneaker]
   }
 
-  type sneakers{
+  type sneaker{
     _id: ID
     shoeName: String
     brand: String
@@ -17,14 +17,14 @@ const typeDefs = gql`
     styleID: String
     make: String
     colorway: String
-    retailPrice: Number
+    retailPrice: Int
     thumbnail: String
     releaseDate:String
     description:String
     urlKey: String
     imageLinks: String
     resellLinks : String
-    lowestResellPrice: Object
+    lowestResellPrice: String
   }
 
   type Auth {
@@ -37,16 +37,17 @@ const typeDefs = gql`
     profile(profileId: ID!): Profile
     # Because we have the context functionality in place to check a JWT and decode its data, we can use a query that will always find and return the logged in user's data
     me: Profile
-    sneakers:[Sneakers]!
+    sneaker(sneakerId: ID): sneaker
+    sneakers:[sneaker]!
   }
 
   type Mutation {
     addProfile(name: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
 
-    addSneaker(profileId: ID!, Sneaker: String!): Profile
+    addSneaker(profileId: ID!, sneaker: String!): sneaker
     removeProfile: Profile
-    removeSneaker(Sneaker: String!): Profile
+    removeSneaker(sneaker: String!): Profile
   }
 `;
 

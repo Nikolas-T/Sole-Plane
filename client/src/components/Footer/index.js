@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './footer.css'
-import GitHub from '/UCF/Sole-Plane/client/src/images/GitHub.webp'
+import GitHub from '../../images/GitHub.webp'
 
 const Footer = () => {
   const location = useLocation();

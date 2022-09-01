@@ -3,8 +3,8 @@ import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-import SkillsList from '../components/SkillsList';
-import SkillForm from '../components/SkillForm';
+import SneakersList from '../components/SneakersList';
+import SneakerForm from '../components/SneakerForm';
 
 import { QUERY_SINGLE_PROFILE, QUERY_ME } from '../utils/queries';
 
@@ -49,14 +49,14 @@ const Profile = () => {
       </h2>
 
       {profile.sneakers?.length > 0 && (
-        <SkillsList
+        <SneakersList
           sneakers={profile.sneakers}
           isLoggedInUser={!profileId && true}
         />
       )}
 
       <div className="my-4 p-4" style={{ border: '1px dotted #1a1a1a' }}>
-        <SkillForm profileId={profile._id} />
+        <SneakerForm profileId={profile._id} />
       </div>
     </div>
   );

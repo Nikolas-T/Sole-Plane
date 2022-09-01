@@ -2,24 +2,24 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 
-import { ADD_SKILL } from '../../utils/mutations';
+import { ADD_SNEAKER } from '../../utils/mutations';
 
 import Auth from '../../utils/auth';
 
-const SkillForm = ({ profileId }) => {
-  const [skill, setSkill] = useState('');
+const SneakerForm = ({ profileId }) => {
+  const [sneaker, setSneaker] = useState('');
 
-  const [addSkill, { error }] = useMutation(ADD_SKILL);
+  const [addSneaker, { error }] = useMutation(ADD_SNEAKER);
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
     try {
-      const data = await addSkill({
-        variables: { profileId, skill },
+      const data = await addSneaker({
+        variables: { profileId, sneaker },
       });
 
-      setSkill('');
+      setSneaker('');
     } catch (err) {
       console.error(err);
     }
@@ -27,7 +27,7 @@ const SkillForm = ({ profileId }) => {
 
   return (
     <div>
-      <h4>Endorse some more skills below.</h4>
+      <h4>Add more sneakers below.</h4>
 
       {Auth.loggedIn() ? (
         <form
@@ -36,16 +36,16 @@ const SkillForm = ({ profileId }) => {
         >
           <div className="col-12 col-lg-9">
             <input
-              placeholder="Endorse some skills..."
-              value={skill}
+              placeholder="Add some sneakers..."
+              value={sneaker}
               className="form-input w-100"
-              onChange={(event) => setSkill(event.target.value)}
+              onChange={(event) => setSneaker(event.target.value)}
             />
           </div>
 
           <div className="col-12 col-lg-3">
             <button className="btn btn-info btn-block py-3" type="submit">
-              Endorse Skill
+              Add Sneaker
             </button>
           </div>
           {error && (
@@ -56,7 +56,7 @@ const SkillForm = ({ profileId }) => {
         </form>
       ) : (
         <p>
-          You need to be logged in to endorse skills. Please{' '}
+          You need to be logged in to Add sneakers. Please{' '}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}
@@ -64,4 +64,4 @@ const SkillForm = ({ profileId }) => {
   );
 };
 
-export default SkillForm;
+export default SneakerForm;

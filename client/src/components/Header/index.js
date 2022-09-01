@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './header.css'
+import logo from '/UCF/Sole-Plane/client/src/images/soul-plane-logo.png'
 
 import Auth from '../../utils/auth';
 
@@ -10,16 +12,16 @@ const Header = () => {
   };
   return (
     <header className="bg-info text-dark mb-4 py-3 display-flex align-center">
-      <div className="container flex-column justify-space-between-lg justify-center align-center text-center">
+      <div className="logo">
         <Link className="text-dark" to="/">
-          <h1 className="m-0" style={{ fontSize: '3rem' }}>
-            Tech Friends
+          <h1 className="">
+            <img src={logo} alt="SoulPlaneLogo"/>
           </h1>
         </Link>
         <p className="m-0" style={{ fontSize: '1.75rem', fontWeight: '700' }}>
-          Meet your new programming pals.
+          
         </p>
-        <div>
+        <div className='login'>
           {Auth.loggedIn() ? (
             <>
               <Link className="btn btn-lg btn-primary m-2" to="/me">

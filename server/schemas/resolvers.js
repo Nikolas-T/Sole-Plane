@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { Profile } = require('../models');
+const { Profile, Sneaker } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -18,6 +18,12 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+    sneakers: async () => {
+      return Sneaker.find();
+    },
+    sneaker: async (parent, {sneakerId}) => {
+      return Sneaker.findOne({_id: sneakerId});
+    }
   },
 
   Mutation: {
@@ -45,13 +51,13 @@ const resolvers = {
     },
 
     // Add a third argument to the resolver to access data in our `context`
-    addSkill: async (parent, { profileId, skill }, context) => {
+    addSneaker: async (parent, { profileId, Sneaker }, context) => {
       // If context has a `user` property, that means the user executing this mutation has a valid JWT and is logged in
       if (context.user) {
         return Profile.findOneAndUpdate(
           { _id: profileId },
           {
-            $addToSet: { skills: skill },
+            $addToSet: { Sneaker: Sneaker },
           },
           {
             new: true,
@@ -65,16 +71,16 @@ const resolvers = {
     // Set up mutation so a logged in user can only remove their profile and no one else's
     removeProfile: async (parent, args, context) => {
       if (context.user) {
-        return Profile.findOneAndDelete({ _id: context.user._id });
+        return Profile.findOneAndRemove({ _id: context.user._id });
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    // Make it so a logged in user can only remove a skill from their own profile
-    removeSkill: async (parent, { skill }, context) => {
+    // Make it so a logged in user can only remove a sneaker from their own profile
+    removeSneaker: async (parent, { Sneaker }, context) => {
       if (context.user) {
         return Profile.findOneAndUpdate(
           { _id: context.user._id },
-          { $pull: { skills: skill } },
+          { $pull: { Sneaker: Sneaker } },
           { new: true }
         );
       }

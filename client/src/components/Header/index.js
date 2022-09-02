@@ -27,7 +27,7 @@ const Header = () => {
                   name="name"
                   type="text"
                   />
-                <button className="btn" type="submit">
+                <button className="btn btn-lg btn-primary m-2" type="submit">
                   Search
                 </button>
           </form>
@@ -46,7 +46,7 @@ const Header = () => {
               <Link className="btn btn-lg btn-primary m-2" to="/login">
                 Login
               </Link>
-              <Link className="btn btn-lg btn-light m-2" to="/signup">
+              <Link class="stage" className="btn btn-lg btn-light m-2" to="/signup">
                 Signup
               </Link>
             </>

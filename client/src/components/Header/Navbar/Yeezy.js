@@ -1,9 +1,10 @@
 import React from 'react';
+import '../../../styles/yeezy.css'
 
 
 export default function Yeezy() {
   return (
-    <div className='Yeezy'>
+    <div class='yeezy'>
       <h1>YEEZY</h1> 
       <p>
         Aliquam semper ultrices varius. Aliquam faucibus sit amet

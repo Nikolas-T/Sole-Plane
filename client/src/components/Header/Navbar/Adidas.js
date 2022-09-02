@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../../../styles/adidas.css'
 
 export default function Adidas() {
   return (

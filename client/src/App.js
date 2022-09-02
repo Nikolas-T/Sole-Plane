@@ -14,6 +14,11 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Adidas from './components/Header/Navbar/Adidas';
+import Yeezy from './components/Header/Navbar/Yeezy';
+import Nike from './components/Header/Navbar/Nike';
+import Jordan from './components/Header/Navbar/Jordan';
+import SoulPlane from './components/Header/Navbar/SoulPlane';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -63,6 +68,26 @@ function App() {
               <Route 
                 path="/profiles/:profileId"
                 element={<Profile />}
+              />
+              <Route 
+                path="/adidas" 
+                element={<Adidas />}
+              />
+              <Route 
+                path="/jordan" 
+                element={<Jordan />}
+              />
+              <Route 
+                path="/nike" 
+                element={<Nike />}
+              />
+              <Route 
+                path="/yeezy" 
+                element={<Yeezy />}
+              />
+              <Route 
+                path="/soulplane" 
+                element={<SoulPlane />}
               />
             </Routes>
           </div>

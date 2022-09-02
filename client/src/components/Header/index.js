@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css'
 import logo from '../../images/soul-plane-logo.png'
-
+import NavTabs from './Navbar/NavTabs';
 import Auth from '../../utils/auth';
 
 const Header = () => {
@@ -31,6 +31,7 @@ const Header = () => {
                   Search
                 </button>
           </form>
+          <div><NavTabs/></div>
         <div className='login'>
           {Auth.loggedIn() ? (
             <>

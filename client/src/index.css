@@ -1029,13 +1029,14 @@ a:hover {
   background-color: #ee8294;
 }
 
+/* login page */
 .btn.btn-info {
-  background-color: #1bbc9b;
+  background-color:   #5314aa;
   color: #ffffff;
 }
 
 .btn.btn-info:hover {
-  background-color: #31e1bd;
+  background-color: #814fc6;
 }
 
 .btn.btn-light {

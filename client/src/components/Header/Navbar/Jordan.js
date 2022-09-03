@@ -1,9 +1,10 @@
 import React from 'react';
+import '../../../styles/jordan.css'
 
 
 export default function Jordan() {
   return (
-    <div>
+    <div class='jordan'>
       <h1>Air Jordan</h1>
       <p>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.

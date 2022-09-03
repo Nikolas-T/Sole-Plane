@@ -1,9 +1,10 @@
 import React from 'react';
+import '../../../styles/nike.css'
 
 
 export default function Nike() {
   return (
-    <div>
+    <div class='nike'>
       <h1>Nike</h1>
       <p>
         Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis

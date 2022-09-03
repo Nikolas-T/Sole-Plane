@@ -1,9 +1,10 @@
 import React from 'react';
+import '../../../styles/soulplane.css'
 
 
 export default function SoulPlane() {
   return (
-    <div class='Soul Plane'>
+    <div class='soulPlane'>
       <h1>Soul Plane</h1>
 
       <p>

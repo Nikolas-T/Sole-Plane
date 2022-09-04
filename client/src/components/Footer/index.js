@@ -17,9 +17,13 @@ const Footer = () => {
             &larr; Go Back
           </button>
         )}
-        <h4>&copy; {new Date().getFullYear()} - Soul Plane <img src={GitHub} alt="GitHub" /></h4>
+        <h4>&copy; {new Date().getFullYear()} - Soul Plane</h4>
       </div>
-      <a href='https://www.facebook.com/soleplane1' target='_blank' rel='noreferrer noopener'>SolePlane</a>
+      <div className='text-center'>
+      <a href='https://www.facebook.com/soleplane1' class="fa fa-facebook"></a>
+      <a href="https://www.instagram.com/soleplane_official/" class="fa fa-instagram"></a>
+      <a href="https://github.com/Nikolas-T/Sole-Plane" class="fa fa-github"></a>
+      </div>
     </footer>
   );
 };

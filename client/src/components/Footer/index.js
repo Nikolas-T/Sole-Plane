@@ -19,6 +19,7 @@ const Footer = () => {
         )}
         <h4>&copy; {new Date().getFullYear()} - Soul Plane <img src={GitHub} alt="GitHub" /></h4>
       </div>
+      <a href='https://www.facebook.com/soleplane1' target='_blank' rel='noreferrer noopener'>SolePlane</a>
     </footer>
   );
 };

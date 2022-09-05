@@ -1,21 +1,32 @@
 import React from 'react';
 import '../../../styles/yeezy.css'
-
+import MXBlue from  '../../../images/yeezyMXBlue.jpg'
+import kanye from '../../../images/Screenshot (19).png'
+import waveRunner from '../../../images/yeezy-9.webp'
+import Boost750 from '../../../images/Boost-750.jpg'
 
 export default function Yeezy() {
   return (
     <div class='yeezy'>
       <h1>YEEZY</h1> 
       <p>
-        Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. Etiam ornare rutrum felis atrhoncus. Etiam vel 
-        condimentum magna, quis tempor nulla. Ut vel ante eget massa ornare placerat. 
-        Etiam nisl orci, finibus sodales volutpat et, hendrerit ut dolor. 
-        Suspendisse porta dictum nunc, sed pretium risus rutrum eget. 
-        Nam consequat, ligula in faucibus vestibulum, nisi justo laoreet risus, 
-        luctus luctus mi lacus sit amet libero. Class aptent taciti sociosqu ad litora torquent 
-        per conubia nostra, per inceptos himenaeos.
+      <img src={MXBlue}  alt="MXBlue" height="200" width="220" />
+      </p>
+      <p>
+      Adidas called the new alliance unprecedented and referred to it as “the most 
+      significant partnership ever created between a nonathlete and an athletic brand.”
+      The German sporting goods giant and the musician said they were launching Adidas + Kanye West, 
+      “a Yeezy-branded entity creating footwear, apparel and accessories for all genders across 
+      street and sport.”
+      </p>
+      <p>
+      <img src={kanye}  alt="kanye" height="250" width="150" />
+      </p>
+      <p>
+      <img src={waveRunner}  alt="Wave-Runner" height="150" width="150" />
+      </p>
+      <p>
+      <img src={Boost750}  alt="Boost750" height="250" width="250" />
       </p>
     </div>
     

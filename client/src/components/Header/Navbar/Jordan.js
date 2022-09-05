@@ -1,5 +1,8 @@
 import React from 'react';
-import '../../../styles/jordan.css'
+import '../../../styles/jordan.css';
+import '../../../images/jordan 1.jpeg';
+import '../../../images/jordan 2.jpg';
+import '../../../images/Mj.jpeg';
 
 
 export default function Jordan() {
@@ -7,19 +10,20 @@ export default function Jordan() {
     <div class='jordan'>
       <h1>Air Jordan</h1>
       <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
+      Air Jordan is a line of basketball shoes and athletic clothing produced by American corporation Nike. 
+      The first Air Jordan shoe was produced for Hall of Fame former basketball player 
+      Michael Jordan during his time with the Chicago Bulls in late 1984 and released to the public on April 1, 1985.
+      The Jordan shoe line was first introduced on  November 17, 1984.
+      The brand is owned by Nike and sold world wide.
+      </p>
+      <p>
+        <img src="../../../images/jordan 1.jpeg" alt="Jordan 1s"/>
+      </p>
+      <p>
+        <img src="../../../images/jordan 2.jpg" alt="Jordan 2s"/>
+      </p>
+      <p>
+        <img src="../../../images/Mj.jpeg" alt="MJ"/>
       </p>
     </div>
   );

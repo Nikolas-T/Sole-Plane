@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/Nikolas-T/Sole-Plane/issues"
   },
-  "homepage": "https://github.com/Nikolas-T/Sole-Plane#readme"
+  "homepage": "https://github.com/Nikolas-T/Sole-Plane#readme",
+  "dependencies": {
+    "react-floating-action-button": "^1.0.5",
+    "react-pageflip": "^2.0.3"
+  }
 }

@@ -1,19 +1,22 @@
 import React from 'react';
 import '../../../styles/soulplane.css'
+import soleplanemerch1 from '../../../images/sole plane merch1.png';
+import soleplanemerch2 from '../../../images/sole plane merch 2.png';
 
 
 export default function SoulPlane() {
   return (
     <div class='soulPlane'>
-      <h1>Soul Plane</h1>
+      <h1>Sole Plane</h1>
 
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+       Merch Coming Soon 2023! You know you want it 👟
+      </p>
+      <p>
+      <img src={soleplanemerch1} alt="merch 1" height="500" width="950"/>
+      </p>
+      <p>
+      <img src={soleplanemerch2} alt="merch 2" height="500" width="1200"/>
       </p>
     </div>
   );

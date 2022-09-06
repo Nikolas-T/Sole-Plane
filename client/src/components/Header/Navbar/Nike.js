@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../../styles/nike.css'
-import '../../../images/air force 1.jpeg'
-import '../../../images/Reflective air force 1.jpeg'
-import '../../../images/lakers air force.jpeg'
+import Nike1 from '../../../images/air force 1.jpeg'
+import AirForce from'../../../images/Reflective air force 1.jpeg'
+import Lakers from'../../../images/lakers air force.jpeg'
 
 
 export default function Nike() {
@@ -15,13 +15,13 @@ export default function Nike() {
        The company was founded on January 25, 1964, as "Blue Ribbon Sports", by Bill Bowerman and Phil Knight, and officially became Nike, Inc. on May 30, 1971.
       </p>
       <p>
-        <img src="../../../images/air force 1.jpeg" alt="Air Force 1s"/>
+        <img src={Nike1} alt="Air Force 1s" height="250" width="250"/>
       </p>
       <p>
-        <img src="../../../images/Reflective air force 1.jpeg" alt="Special Air Force"/>
+        <img src={AirForce} alt="Special Air Force" height="250" width="250"/>
       </p>
       <p>
-        <img src="../../../images/lakers air force.jpeg" alt="Special Edition"/>
+        <img src={Lakers} alt="Special Edition" height="250" width="250"/>
       </p>
     </div>
   );

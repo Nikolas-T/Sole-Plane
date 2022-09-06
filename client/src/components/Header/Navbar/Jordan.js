@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../../styles/jordan.css';
-import '../../../images/jordan 1.jpeg';
-import '../../../images/jordan 2.jpg';
-import '../../../images/Mj.jpeg';
+import J1 from'../../../images/jordan 1.jpeg';
+import J2 from '../../../images/jordan 2.jpg';
+import MJ from '../../../images/Mj.jpeg';
 
 
 export default function Jordan() {
@@ -17,13 +17,13 @@ export default function Jordan() {
       The brand is owned by Nike and sold world wide.
       </p>
       <p>
-        <img src="../../../images/jordan 1.jpeg" alt="Jordan 1s"/>
+        <img src={J1} alt="Jordan 1s" height="250" width="250"/>
       </p>
       <p>
-        <img src="../../../images/jordan 2.jpg" alt="Jordan 2s"/>
+        <img src={J2} alt="Jordan 2s" height="250" width="250"/>
       </p>
       <p>
-        <img src="../../../images/Mj.jpeg" alt="MJ"/>
+        <img src={MJ} alt="MJ" height="250" width="250"/>
       </p>
     </div>
   );

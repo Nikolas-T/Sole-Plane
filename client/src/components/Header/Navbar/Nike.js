@@ -23,6 +23,12 @@ export default function Nike() {
       <p>
         <img src={Lakers} alt="Special Edition" height="250" width="250"/>
       </p>
+      <p>
+        Nike is a footwear and apparel juggernaut.
+        Brand is everything. Everyone talks about "the brand" and image of a company. Nike has more than just a brand-- it has a cult following. 
+        Sneaker heads still go crazy over a pair of Nike Dunk style shoes, 
+        or even the Air Force Ones, which are still going strong in numerous different colors even though the style was originally introduced way back in the early 80's.
+      </p>
     </div>
   );
 }

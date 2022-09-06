@@ -3,7 +3,6 @@ import { useQuery } from '@apollo/client';
 
 import ProfileList from '../components/ProfileList';
 import HTMLFlipBook from "react-pageflip";
-import { Container, Button, Link } from 'react-floating-action-button';
 
 import { QUERY_PROFILES } from '../utils/queries';
 

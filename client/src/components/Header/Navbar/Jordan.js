@@ -8,7 +8,7 @@ import bulls from '../../../images/Chicago-Bulls-Symbol.jpg'
 
 export default function Jordan() {
   return (
-    <div class='jordan' style={{backgroundImage:`url()`}}>
+    <div class='jordan' style={{backgroundImage:`url("https://clipartcraft.com/images/chicago-bulls-logo-graffiti-5.png")`}}>
       <h1>Air Jordan</h1>
       <p>
       Air Jordan is a line of basketball shoes and athletic clothing produced by American corporation Nike. 
@@ -18,16 +18,16 @@ export default function Jordan() {
       The brand is owned by Nike and sold world wide.
       </p>
       <p>
-        <img src={J1} alt="Jordan 1s" height="250" width="250"/>
+        <img src={J1} className ="image_right" alt="Jordan 1s" height="250" width="250"/>
       </p>
       <p>
-        <img src={J2} alt="Jordan 2s" height="250" width="250"/>
+        <img src={J2} className="image_left" alt="Jordan 2s" height="250" width="250"/>
       </p>
       <p>
-        <img src={MJ} alt="MJ" height="250" width="250"/>
+        <img src={MJ}  alt="MJ" height="300" width="300"/>
       </p>
       <p>
-        This is the iconic free throw line dunk by Michael Jordan in 1987. 
+        The free throw line dunk by Michael Jordan happened in 1987. 
         This image is what became the Jordan brand logo.
         The free throw line dunk was done before but none are iconic like MJ.
         As you see here, this is the beginning of the Bulls/Jordan Dynasty.

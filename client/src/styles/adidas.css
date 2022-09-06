@@ -1,6 +1,32 @@
 .Adidas {
    font-weight: bolder;
    color: blue;
-   margin-bottom: 50%;
-   margin-top: 10%;
+   margin-top: 5%;
+}
+
+p {
+   margin-bottom: 14%;
+   margin-top: 5%;
+}
+
+.passage_right {
+   padding-right: 20%;
+}
+
+.image_right {
+   border-bottom-style: solid;
+   border-right-style: solid;
+   border-color: yellow;
+   float: right;
+   margin-bottom: 10%;
+   
+}
+
+.image_left {
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-color: yellow;
+   float: left;
+   margin-bottom: 5%;
+   margin-right: 10%;
 }

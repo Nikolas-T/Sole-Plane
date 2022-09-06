@@ -10,7 +10,7 @@ export default function Yeezy() {
     <div class='yeezy'>
       <h1>YEEZY</h1> 
       <p>
-      <img src={MXBlue}  alt="MXBlue" height="200" width="220" />
+      <img src={MXBlue}  alt="MXBlue" height="400" width="600" />
       </p>
       <p>
       Adidas called the new alliance unprecedented and referred to it as “the most 

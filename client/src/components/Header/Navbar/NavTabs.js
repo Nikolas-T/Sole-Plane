@@ -51,7 +51,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       <Link 
         to='/soulplane' 
         style={{ textDecoration: 'none' }}
-        className={currentPage === 'SoulPlane' ? 'nav-link active' : 'nav-link'}
+        className={currentPage === 'SolePlane' ? 'nav-link active' : 'nav-link'}
       >
         <img src={SoulPlane}  alt="SoulPlane" height="80" width="100" />
       </Link>

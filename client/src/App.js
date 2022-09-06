@@ -18,7 +18,7 @@ import Adidas from './components/Header/Navbar/Adidas';
 import Yeezy from './components/Header/Navbar/Yeezy';
 import Nike from './components/Header/Navbar/Nike';
 import Jordan from './components/Header/Navbar/Jordan';
-import SoulPlane from './components/Header/Navbar/SoulPlane';
+import SolePlane from './components/Header/Navbar/SolePlane';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -86,8 +86,8 @@ function App() {
                 element={<Yeezy />}
               />
               <Route 
-                path="/soulplane" 
-                element={<SoulPlane />}
+                path="/soleplane" 
+                element={<SolePlane />}
               />
             </Routes>
           </div>

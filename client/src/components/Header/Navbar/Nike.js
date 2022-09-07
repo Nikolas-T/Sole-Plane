@@ -7,7 +7,7 @@ import Lakers from'../../../images/lakers air force.jpeg'
 
 export default function Nike() {
   return (
-    <div class='nike'>
+    <div class='nike'style={{backgroundImage:`url(https://th.bing.com/th/id/R.f464ab1d91156658a5b00483a915c706?rik=4lwDxLv4mJXGzA&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fnike-transparent-logo%2fnike-transparent-logo-18.jpg&ehk=J1rId5kdRrGTZAODiKVfGGgGooh4oAs8IlbOP0gnDYo%3d&risl=&pid=ImgRaw&r=0)`}}>
       <h1>Nike</h1>
       <p>
        Nike is an American multinational corporation that is engaged in the design, development, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services. 
@@ -15,10 +15,10 @@ export default function Nike() {
        The company was founded on January 25, 1964, as "Blue Ribbon Sports", by Bill Bowerman and Phil Knight, and officially became Nike, Inc. on May 30, 1971.
       </p>
       <p>
-        <img src={Nike1} alt="Air Force 1s" height="250" width="250"/>
+        <img src={Nike1} className="image_right" alt="Air Force 1s" height="250" width="250"/>
       </p>
       <p>
-        <img src={AirForce} alt="Special Air Force" height="250" width="250"/>
+        <img src={AirForce} className="image_left" alt="Special Air Force" height="250" width="250"/>
       </p>
       <p>
         <img src={Lakers} alt="Special Edition" height="250" width="250"/>

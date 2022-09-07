@@ -41,7 +41,7 @@ const Footer = () => {
       <a href="https://github.com/Nikolas-T/Sole-Plane" class="fa fa-github"></a>
       </div>
 
-      <section class="footer-section">
+      <section class="contributor">
           
             
             <div class="box"><a href="https://github.com/AjaniBrowne" target="_blank" class="github-hover"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -61,9 +61,6 @@ const Footer = () => {
             </svg><p class="username">Nikolas-T</p></a></div>
 
           
-          <div class="footer-text">
-
-          </div>
 
         </section>
     </footer>
@@ -71,3 +68,33 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

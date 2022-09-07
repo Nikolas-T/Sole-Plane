@@ -34,3 +34,142 @@ h4 {
     background: #430297;
     color: white;
   }
+
+  .contributor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: niveau-grotesk, sans-serif;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .username {
+      text-align: center;
+      font-family: niveau-grotesk, sans-serif;
+      font-weight: 400;
+      font-style:normal;
+      color:rgb(32, 142, 179);
+      margin-top: 2%;
+      display: block;
+      align-items:flex-start;
+      height: 20%;
+      width:min-content ;
+  }
+  
+  div.box {
+    display: block;
+    width: min-content;
+    position: relative;
+    align-items:center;
+    float:right;
+    margin-right: 20%;
+    margin: 2%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <footer className="w-100 mt-auto text-dark p-4">
       <Container>
-            <Link href="#"
-                tooltip="Create note link"
+            <Link href="/contact"
+                tooltip="Contact Us"
                 icon="fa fa-commenting" />
             <Link href="#"
                 tooltip="Add user link"

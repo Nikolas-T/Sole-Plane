@@ -14,9 +14,9 @@ const Footer = () => {
             <Link href="/contact"
                 tooltip="Contact Us"
                 icon="fa fa-commenting" />
-            <Link href="#"
+            {/* <Link href="#"
                 tooltip="Add user link"
-                icon="fa fa-user-plus" />
+                icon="fa fa-user-plus" /> */}
                 {/* className="fab-item btn btn-link btn-lg text-white" */}
             <Button
                 tooltip="The big plus button!"

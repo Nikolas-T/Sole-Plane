@@ -10,7 +10,7 @@ export default function Yeezy() {
     <div class='yeezy'>
       <h1>YEEZY</h1> 
       <p>
-      <img src={MXBlue}  alt="MXBlue" height="400" width="600" />
+      <img src={MXBlue} className="YZYimage_left" alt="MXBlue" height="400" width="600" />
       </p>
       <p>
       Adidas called the new alliance unprecedented and referred to it as “the most 
@@ -20,13 +20,18 @@ export default function Yeezy() {
       street and sport.”
       </p>
       <p>
-      <img src={kanye}  alt="kanye" height="250" width="150" />
+      <img src={waveRunner} className="YZYimage_right" alt="Wave-Runner" height="450" width="450" />
       </p>
       <p>
-      <img src={waveRunner}  alt="Wave-Runner" height="150" width="150" />
+      <img src={kanye} className="YZYimage_left" alt="kanye" height="550" width="400" />
       </p>
       <p>
-      <img src={Boost750}  alt="Boost750" height="250" width="250" />
+      "Yeezy Season 1" was released on October 29, 2015, and was the first apparel collection to 
+      release from this collaboration. This collection was noted for its stripped-down, 
+      ready-to-wear style, which drew on military clothing and flesh-toned colors.
+      </p>
+      <p>
+      <img src={Boost750} className="YZYimage_right" alt="Boost750" height="350" width="350" />
       </p>
     </div>
     

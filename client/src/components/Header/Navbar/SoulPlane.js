@@ -4,7 +4,7 @@ import soleplanemerch1 from '../../../images/sole plane merch1.png';
 import soleplanemerch2 from '../../../images/sole plane merch 2.png';
 
 
-export default function SoulPlane() {
+export default function SolePlane() {
   return (
     <div class='soulPlane'>
       <h1>Sole Plane</h1>

@@ -1,3 +1,32 @@
 .yeezy {
-    color: blue;
+   font-weight: bolder;
+   color: blue;
+   margin-top: 5%;
+   margin-left: 5%;
+ 
+}
+
+p {
+   margin-top: 5%;
+   font-size: 17px;
+}
+
+
+
+.YZYimage_right {
+   border-bottom-style: solid;
+   border-right-style: solid;
+   border-color: yellow;
+   float: right;
+   margin: 5% 10% 15% 12%;
+  
+   
+}
+
+.YZYimage_left {
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-color: yellow;
+   float: left;
+   margin: 0% 5% 10% 10%;
 }

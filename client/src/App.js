@@ -19,6 +19,7 @@ import Yeezy from './components/Header/Navbar/Yeezy';
 import Nike from './components/Header/Navbar/Nike';
 import Jordan from './components/Header/Navbar/Jordan';
 import SolePlane from './components/Header/Navbar/SolePlane';
+import Contact from './pages/Contact';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -89,6 +90,10 @@ function App() {
                 path="/soleplane" 
                 element={<SolePlane />}
               />
+              <Route
+                path="/contact"
+                element={<Contact />}
+                />
             </Routes>
           </div>
           <Footer />

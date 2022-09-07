@@ -2,31 +2,31 @@
    font-weight: bolder;
    color: blue;
    margin-top: 5%;
+   margin-left: 2%;
+ 
 }
 
 p {
-
    margin-top: 5%;
+   font-size: 17px;
 }
 
-.passage_right {
-   padding-right: 20%;
-}
 
-.image_right {
+
+.ADimage_right {
    border-bottom-style: solid;
    border-right-style: solid;
    border-color: yellow;
    float: right;
-   margin-bottom: 10%;
+   margin: 0% 2% 8% 10%;
+  
    
 }
 
-.image_left {
+.ADimage_left {
    border-bottom-style: solid;
    border-left-style: solid;
    border-color: yellow;
    float: left;
-   margin-bottom: 5%;
-   margin-right: 10%;
+   margin: 0% 5% 13% 10%;
 }

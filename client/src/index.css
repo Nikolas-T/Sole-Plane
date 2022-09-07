@@ -369,7 +369,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'segoe ui', segoe ui;
   margin: 0 0 0.5rem;
   line-height: 1.25;
 }
@@ -1001,6 +1001,7 @@ a:hover {
 }
 
 .btn.btn-lg {
+  font-family: 'segoe ui', segoe ui;
   font-size: 1.25rem;
   padding: 0.8rem 1.4rem;
 }
@@ -1012,6 +1013,7 @@ a:hover {
 }
 
 .btn.btn-primary {
+  font-family: 'segoe ui', segoe ui;
   background-color: #5314aa;
   color: #d9e9e8;
 }
@@ -1031,6 +1033,7 @@ a:hover {
 
 /* login page */
 .btn.btn-info {
+  font-family: 'segoe ui', segoe ui;
   background-color:   #5314aa;
   color: #ffffff;
 }

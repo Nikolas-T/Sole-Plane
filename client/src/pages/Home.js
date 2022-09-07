@@ -6,6 +6,19 @@ import HTMLFlipBook from "react-pageflip";
 import { Container, Button, Link } from 'react-floating-action-button';
 
 import { QUERY_PROFILES } from '../utils/queries';
+import SneakerBox from '../images/SNEAKER-PILES.jpeg'
+import NikeSB from '../images/NikeSBPile.jpeg'
+import KobeTribute from '../images/KobeTribute.jpg'
+import KobeSneakers from '../images/KobeSneakers.jpeg'
+import JordanJam from '../images/JordanSpaceJam.webp'
+import JordanCatalog from '../images/JordanCatalog.png'
+import LebronSneakers from '../images/LebronSneakers.png'
+import KingJames from '../images/KingJames.png'
+import KanyeWest from '../images/Kanye350.jpeg'
+import Yeezys from '../images/YeezyPile.jpeg'
+
+
+
 
 
 const Home = () => {
@@ -23,20 +36,64 @@ const Home = () => {
             //   profiles={profiles}
             //   title="Here's the current roster of friends..."
             // />
-            <HTMLFlipBook width={300} height={500}>
-            <div className="demoPage">
+            <HTMLFlipBook class="justifyContent-center" width={500} height={700}>
+            <div className="ajustify-center demoPage">
               <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                <img src={SneakerBox} alt="SneakerBox" />
               </p>
             </div>
             <div className="demoPage">
-              Page 2
+              <p>
+              <img src={NikeSB} alt="NikeSBPile" width={500} height={666} />
+              </p>
             </div>
             <div className="demoPage">
-              Page 3
+              A Tribute to Black Mamba
+              <p>
+              <img src={KobeTribute} alt="KobeTribute" width={500} height={666} />
+              </p>
             </div>
             <div className="demoPage">
-              Page 4
+              Kobe Jersey and his Sneaker Silhouettes
+              <p>
+              <img src={KobeSneakers} alt="NikeSBPile" width={500} height={666} />
+              </p>
+            </div>
+            <div className="demoPage">
+              Michael Jordan in Space Jam
+              <p>
+              <img src={JordanJam} alt="NikeSBPile" width={500} height={666} />
+              </p>
+            </div>
+            <div className="demoPage">
+              The Air Jordan Sneaker Family
+              <p>
+              <img src={JordanCatalog} alt="NikeSBPile" width={500} height={666} />
+              </p>
+            </div>
+            <div className="demoPage">
+              Lebron James' slam dunk with Miami Heat
+              <p>
+              <img src={KingJames} alt="NikeSBPile" width={500} height={666} />
+              </p>
+            </div>
+            <div className="demoPage">
+              A variety of Lebrons' Silhouettes
+              <p>
+              <img src={LebronSneakers} alt="NikeSBPile" width={500} height={666} />
+              </p>
+            </div>
+            <div className="demoPage">
+              Kanye West rocking Yeezy Boost 350s
+              <p>
+              <img src={KanyeWest} alt="NikeSBPile" width={500} height={666} />
+              </p>
+            </div>
+            <div className="demoPage">
+              A variety of Kanye's sneakers from his partnership with Adidas
+              <p>
+              <img src={Yeezys} alt="NikeSBPile" width={500} height={666} />
+              </p>
             </div>
           </HTMLFlipBook>
       
